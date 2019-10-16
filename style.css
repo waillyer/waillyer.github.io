@@ -1,0 +1,212 @@
+   * {
+        margin: 0;
+        padding: 0;
+    }
+    ul {
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+    }
+    header {
+        background: url(images/wx.jpg) repeat-x;
+     
+    }
+    .contain {
+        margin: 0 auto;
+    }
+    .nav {
+        height: 75px;
+        /* margin-left: 400px; */
+    }
+    .nav li {
+        float: left;
+        margin: 0 10px;
+        padding-top: 21px;
+      
+    }
+    .nav li a {
+        display: block;
+        background: url(images/to.png) no-repeat;
+        color: #fff;
+        font-size: 14px;
+        line-height: 33px;
+        padding-left: 15px;
+        text-decoration: none;
+    }
+    .nav li a:hover {
+        background-image: url(images/ao.png);
+    }
+
+    .nav li a:hover span {  /* 鼠标经过a a里面的span 也要变换背景 */
+        background-image: url(images/ao.png);
+    }
+    .nav li a span {
+        display: block;
+        line-height: 33px;
+        background: url(images/to.png) no-repeat right center;
+        padding-right: 15px;
+    }
+    .mywebs {
+        height: 425px;
+        /* background-color: pink; */
+    }
+    .banner {
+        /* background: url(images/banner_bg.png) 0 0 repeat-x; */
+        background-color: #1c036b;
+        height:420px;
+        /* background-color: red; */
+        /* position: relative; */
+     
+       
+    }
+    .sliderbar {
+        float: left;
+        margin:20px 50px;
+        height: 400px;
+        width: 260px;
+        background: rgba(0, 0, 0, 0.3);/*  盒子背景半透明 */
+    }
+    .sliderbar li a {
+        display: block;
+        line-height: 45px;
+        padding: 0 20px;
+        font-size: 14px;
+        color: #fff;
+    }
+    .sliderbar li a:hover{
+        color:  rebeccapurple;
+    }
+    .sliderbar li a span { 
+        float: right;
+        display: block;
+        font-family: Arial;
+    }
+
+    .timetable {
+        float: right;
+        margin:20px 50px;
+    }
+    /*轮播图 */
+    .banner-in {
+        height: 420px;
+        /* background: url(images/banner_ct.png) center center no-repeat; */
+        /* position: absolute;  */
+        /* float: left; */
+        /* top:0;
+        left: 400px;  */
+    }
+    /* 轮播图 */
+    .slider {
+        width: 420px; 
+		height: 400px;
+        background-color: pink;
+        float: left;
+       margin: 5px 60px;
+       position: relative;
+       
+      
+    }
+    .slider img {
+        height: 100%; /*盒子铺满盒子 */
+        width: 100%; 
+    }
+    .slider .arrow-l ,
+    .slider .arrow-r 
+    {
+        position: absolute;
+        width: 24px;
+        height: 36px;
+        display: block;
+        top: 50%;
+        margin-top: -18px;
+        
+    }
+    .slider .arrow-l {     
+        left: 0;
+    }
+    .slider .arrow-r {       
+        right: 0;
+    }
+    .circle {
+        float: left;
+        width: 130px;
+        height: 26px;
+        background: rgba(255, 255, 255, 0.2);/*  盒子背景半透明 */
+        position: absolute;
+        bottom: 10px;
+        left: 50%; /* 父盒子一半 */
+        border-radius: 6px;
+        margin-left: -125px;
+
+    }
+    .circle li {
+        float: left;
+        width: 9px;
+        height: 9px;
+        background-color: #B7B7B7;
+        margin: 5px 2px;
+        border-radius: 50%; 
+        /* margin-bottom: 15px; */
+    } 
+    .circle .current li:first-child {
+        background-color: #f40;
+    }
+    
+    .circle li:hover {
+        background-color: #f40;
+    }
+
+    .timetable {
+        float: right;
+        width: 230px;
+        height: 300px;
+        background-color: #fff;
+        margin-top: 50px;
+    }
+    .timetable dt {
+        height: 50px;
+        line-height: 50px;
+        background-color: #9bceea;
+        text-align: center; /* 文字水平居中 */
+        color: #fff;
+        font-weight: 700;  /* 文字加粗 */
+        letter-spacing: 2px; /* 设置字间距 */
+        margin-bottom: 5px;
+    }
+    .timetable dd {
+        width: 193px;
+        height: 60px;
+        margin: 0 auto;
+        border-bottom: 1px solid #ccc;
+        padding-top: 12px;
+        box-sizing: border-box;
+    }
+    .timetable dd:last-child { /* 结构伪类选择器 选最后一个孩子 但是要求这个孩子是dd */
+        border: 0;
+    }
+    .timetable dd h4 {
+        font-size: 16px;
+        font-weight: normal;  /*  让粗体不变粗 */
+        color: #4e4e4e;
+    }
+    .timetable dd p {
+        color: #a5a5a5;
+        font-size: 14px;
+    }
+    .timetable dd a {
+        height: 38px;
+        border: 1px solid #00a4ff;
+        display: block;
+        text-align: center;
+        line-height: 38px;
+        color: #00a4ff;
+        font-weight: 700; /* 文字加粗 700 不要加单位 */ 
+        transition: all 0.5s;  /* 背景颜色和文字颜色都变化 用all */
+
+        /* ctrl+g 快速到某一行  */
+    }
+    .timetable dd a:hover { /* 自己添加 */
+        background-color: #00a4ff;
+        color: #fff;
+    }
