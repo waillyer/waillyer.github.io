@@ -110,6 +110,12 @@
         /* top:0;
         left: 400px;  */
     }
+   .banner-in .sliderbar  span{
+       font-weight: 1000;
+       color: #fff;
+       line-height: 40px;
+       margin-left: 70px;
+   }
     /* 轮播图 */
     .slider {
         width: 420px; 
